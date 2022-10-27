@@ -19,7 +19,7 @@ public class Humain {
 	protected int getQttArgent() {
 		return qttArgent;
 	}
-	public String getNom() {
+	protected String getNom() {
 		return nom;
 	}
 	
