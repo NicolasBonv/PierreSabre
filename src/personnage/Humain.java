@@ -21,7 +21,7 @@ public class Humain {
 	}
 	protected String getNom() {
 		return nom;
-	}
+	} 
 	
 	public void direBonjour() {
 		parler("Bonjour ! je m'appelle " + nom + " et j'aime boire du " + boissonPref);
@@ -43,11 +43,11 @@ public class Humain {
 	}
 	
 	
-	public int gagnerArgent(int gain) {
+	protected int gagnerArgent(int gain) {
 		qttArgent += gain;
 		return qttArgent;
 	}
-	public int perdreArgent(int perte) {
+	protected int perdreArgent(int perte) {
 		qttArgent -= perte;
 		return qttArgent;
 	}

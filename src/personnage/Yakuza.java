@@ -10,6 +10,9 @@ public class Yakuza extends Humain {
 		this.clan = clan;
 		this.reputation = reputation; 
 	}
+	public int getReput() {
+		return reputation;
+	}
 	public void extorquer(Commerçant victime) {
 		parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par la ?");
 		parler(victime.getNom() + " si tu tiens à la vie, donne moi ta bourse !");

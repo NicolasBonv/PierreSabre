@@ -31,12 +31,11 @@ public class HistoireTP4 {
 		yakuza.direBonjour();
 		yakuza.extorquer(commerçant);*/
 		
-		System.out.println("--- Scenario du Ronin :");
+		/*System.out.println("--- Scenario du Ronin :");
 		ronin.direBonjour();
 		int don = ronin.donner(commerçant);
-		commerçant.recevoir(don);
-		
+		commerçant.recevoir(don);*/
+	
 		
 	}
-
 }
