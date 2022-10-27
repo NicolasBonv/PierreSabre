@@ -17,5 +17,6 @@ public class Yakuza extends Humain {
 		qttArgent += qttArgentVictime;
 		victime.seFaireExtorquer();
 		parler("J'ai piqué " + qttArgentVictime + " de " + victime.getNom() + ", ce qui me fait " + qttArgent + ".");
+		reputation += 1;
 	}
 }

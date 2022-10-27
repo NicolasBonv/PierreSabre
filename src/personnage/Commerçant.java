@@ -13,6 +13,6 @@ public class Commerçant extends Humain {
 	}
 	public void recevoir(int don) {
 		qttArgent += don;
-		parler(qttArgent + " sous ! Je te remercie genereux donateur !");
+		parler(don + " sous ! Je te remercie genereux donateur !");
 	}
 }
