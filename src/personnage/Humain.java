@@ -10,17 +10,27 @@ public class Humain {
 		this.qttArgent = qttArgent;
 	}
 	private String prendreParole() {
-		return "L'humain " + nom + " : ";
+		return "( " + nom + " ) : ";
 	}
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println(prendreParole() + "< " + texte + " >");
 	}
-		public void direBonjour() {
+	
+	protected int getQttArgent() {
+		return qttArgent;
+	}
+	public String getNom() {
+		return nom;
+	}
+	
+	public void direBonjour() {
 		parler("Bonjour ! je m'appelle " + nom + " et j'aime boire du " + boissonPref);
 	}
+	
 	public void boire() {
 		parler("Mmmm, un bon verre de " + boissonPref + " ! Gloups !");
 	}
+	
 	public int acheter(String bien, int prix) {
 		if (prix > qttArgent) {
 			parler("j'ai "+ qttArgent +" en poche, je ne peux pas m'acheter " + bien + " , il coute " + prix + ".");
@@ -31,6 +41,8 @@ public class Humain {
 		}
 		return qttArgent;
 	}
+	
+	
 	public int gagnerArgent(int gain) {
 		qttArgent += gain;
 		return qttArgent;
