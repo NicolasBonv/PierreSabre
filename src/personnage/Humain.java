@@ -12,7 +12,7 @@ public class Humain {
 		this.boissonPref = boissonPref;
 		this.qttArgent = qttArgent;
 	}
-	private String prendreParole() {
+	protected String prendreParole() {
 		return "( " + nom + " ) : ";
 	}
 	protected void parler(String texte) {
