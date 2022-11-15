@@ -36,6 +36,7 @@ public class HistoireTP4 {
 		int don = ronin.donner(commerçant);
 		commerçant.recevoir(don);*/
 	
-		
+		System.out.println("--- Scenario du Ronin vs Yakuza :");
+		ronin.provoquer(yakuza);
 	}
 }

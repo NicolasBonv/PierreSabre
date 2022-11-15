@@ -1,5 +1,5 @@
 package personnage;
-import personnage.Yakuza
+import personnage.Yakuza;
 public class Ronin extends Humain {
 	private int honneur;
 	private String nom = getNom();
@@ -15,15 +15,14 @@ public class Ronin extends Humain {
 		return don;
 	}
 	public void provoquer(Yakuza yakuza) {
+		parler("Je t'ai retrouvé vermine, tu vas payer");
 		int forceYakuza = yakuza.getReput();
 		int forceRonin = honneur * 2;
 		if (forceYakuza <= forceRonin) {
 			honneur++;
 			gagnerArgent(yakuza.getQttArgent());
 			parler("Je t'ai eu petit yakuza");
-			yakuza.parler("J'ai perdu mon duel et mes "+ yakuza.getQttArgent() +)
-			
-		}
+			yakuza.parler("J'ai perdu mon duel et mes "+ yakuza.getQttArgent() + " sous, snif");}
 		else {
 			honneur--;
 			perdreArgent(qttArgent);
@@ -31,4 +30,3 @@ public class Ronin extends Humain {
 		}
 		}
 	}
-}
