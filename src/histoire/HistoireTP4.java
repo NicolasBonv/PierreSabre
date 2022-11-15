@@ -9,7 +9,7 @@ public class HistoireTP4 {
 		Humain humain = new Humain("Nicolas","thé framboise",20);
 		Commerçant commerçant = new Commerçant("Marco","thé",15);
 		Yakuza yakuza = new Yakuza("Rowan le Gris","café",30,"Warsong",0);
-		Ronin ronin = new Ronin("Paku le Rouge","lait fraise",60,1);
+		Ronin ronin = new Ronin("Paku le rouge" , "lait fraise" , 60 ); 
 		
 		/*System.out.println("--- Scenario de l'humain :");
 		humain.direBonjour();
@@ -36,7 +36,7 @@ public class HistoireTP4 {
 		int don = ronin.donner(commerçant);
 		commerçant.recevoir(don);*/
 	
-		System.out.println("--- Scenario du Ronin vs Yakuza :");
-		ronin.provoquer(yakuza);
+		/*System.out.println("--- Scenario du Ronin vs Yakuza :");
+		ronin.provoquer(yakuza);*/
 	}
 }

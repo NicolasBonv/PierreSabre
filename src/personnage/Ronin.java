@@ -1,12 +1,11 @@
 package personnage;
 import personnage.Yakuza;
 public class Ronin extends Humain {
-	private int honneur;
 	private String nom = getNom();
 	private int qttArgent = getQttArgent();
-	public Ronin(String nom,String boissonPref,int qttArgent,int honneur) {
+	private int honneur = 1;
+	public Ronin(String nom,String boissonPref,int qttArgent) {
 		super(nom,boissonPref,qttArgent);
-		this.honneur = honneur;
 	}
 	public int donner(Commerçant beneficiaire) {
 		int don = (qttArgent * 10) / 100  ;
